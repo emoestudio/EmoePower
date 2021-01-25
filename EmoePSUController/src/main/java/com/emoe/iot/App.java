@@ -1,13 +1,8 @@
 package com.emoe.iot;
-
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+public class App{
+    GUI graphics = new GUI();
+    public static void main(String[] args){
+        System.out.println("Starting GUI...");
+        
     }
 }
