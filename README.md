@@ -26,29 +26,22 @@ It's final goal is to meet EEers' daily usage requirements:
 
 ### Frequency Calc
 
-$$
-R_T = {{{1 \over F_sw}-200ns} \over {37pF}}
-$$
+![](https://latex.codecogs.com/svg.latex?R_T%20=%20{{{1%20\over%20F_sw}-200ns}%20\over%20{37pF}})
 
 Finally get Rt = 84.5kΩ and we select standard value, that is 82kΩ.  
 
 ### Inductor Selection
 
-$$
-L_{BUCK} = {({{V_{IN(MAX)}-V_{OUT})*V_{OUT}}} \over {0.4*I_{OUT(MAX)}*F_{SW}*V_{IN(MAX)}}} 
-$$
+![](https://latex.codecogs.com/svg.latex?L_{BUCK}%20=%20{({{V_{IN(MAX)}-V_{OUT})*V_{OUT}}}%20\over%20{0.4*I_{OUT(MAX)}*F_{SW}*V_{IN(MAX)}}})
 
 In most cases, circuit works in BUCK mode, so choose a most-common used voltage range, and calculate its L, finally we get L is about 10uH.
 
 And the maximum average inductor current occurs at the minimum input and maximum load current:
 
-$$
-I_{L(MAX)} = {{V_{OUT}*I_{OUT(MAX)}} \over {0.9*V_{IN(MIN)}}}
-$$
+![](https://latex.codecogs.com/svg.latex?I_{L(MAX)}%20=%20{{V_{OUT}*I_{OUT(MAX)}}%20\over%20{0.9*V_{IN(MIN)}}})
 
-$$
-I_{L(PEAK)} = I_{L(MAX)} + {{V_{IN(MIN)}*(V_{OUT}-V_{IN(MIN)})} \over {2*L_!*F_{SW}*V_{OUT}}}
-$$
+
+![](https://latex.codecogs.com/svg.latex?I_{L(PEAK)}%20=%20I_{L(MAX)}%20+%20{{V_{IN(MIN)}*(V_{OUT}-V_{IN(MIN)})}%20\over%20{2*L_1*F_{SW}*V_{OUT}}})
 
 And Saturation current should be higher, about 1.5xIL, about 20A.
 
