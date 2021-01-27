@@ -14,6 +14,11 @@ It's final goal is to meet EEers' daily usage requirements:
 
 **This project is still under development and test.**
 
+## V1.0 PCB
+![img_front](img/EmoePower_V1.0.jpg)
+![img_back](img/EmoePower_V1.0_B.jpg)
+
+
 ## LM5175 Parameter Configuration & Calculation
 
 | Design Requirements | Calculated Value |
